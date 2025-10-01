@@ -215,6 +215,7 @@ export default class OdooJSONRpc {
         headers: {
           'Content-Type': 'application/json',
         },
+        credentials:'omit',
         body: JSON.stringify(params),
       })
     );
@@ -309,6 +310,7 @@ export default class OdooJSONRpc {
       fetch(endpoint, {
         method: 'POST',
         headers,
+         credentials:'omit',
         body: JSON.stringify(params),
       })
     );
@@ -364,6 +366,7 @@ export default class OdooJSONRpc {
       fetch(endpoint, {
         headers,
         method: 'POST',
+         credentials:'omit',
         body: JSON.stringify(params),
       })
     );
@@ -406,6 +409,7 @@ export default class OdooJSONRpc {
       fetch(endpoint, {
         headers,
         method: 'POST',
+         credentials:'omit',
         body: JSON.stringify(params),
       })
     );
@@ -536,6 +540,7 @@ export default class OdooJSONRpc {
       fetch(endpoint, {
         method: 'POST',
         headers,
+         credentials:'omit',
         body: JSON.stringify(params),
       })
     );
